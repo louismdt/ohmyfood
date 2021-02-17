@@ -1,0 +1,45 @@
+
+header{
+    background-image: url("Projet 3/LouisMaudet_3_22022021/ohmyfood/logo/ohmyfood@2x");
+}
+
+
+/*footer comun*/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(44, 42, 42);
+}
+
+footer i{
+    color: white;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.titre_footer{
+    height: 10%;
+    filter: invert(100%);
+}
+
+.proposer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.partenaire{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
