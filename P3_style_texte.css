@@ -307,6 +307,20 @@ header{
         font-family: roboto_medium;
     }
 
+    .liste_menu p{
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .prix{
+        width: 20%;
+        height: 100%;
+    }
+
     .menu button{
         display: flex;
         align-items: center;
