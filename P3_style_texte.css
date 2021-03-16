@@ -293,5 +293,23 @@ header{
         width: 100%;
     }
 
+    .liste_menu{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 15px;
+    }
 
+    .liste_menu p:first-child{
+        font-family: roboto_medium;
+    }
+
+    .menu button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
