@@ -34,6 +34,19 @@ body{
     margin: 0;
 }
 
+.fa-spinner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000px;
+    transition-property: all;
+    transition-duration: 3s;
+
+}
+
 h1,h2{
     font-family: shrikhand;
 }
@@ -340,6 +353,7 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
         background-color: #B1F8D6;
         color: white;
     }
