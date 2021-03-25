@@ -82,8 +82,8 @@ header{
     justify-content: center;
 }
 
-.far_fa-heart:hover{
-    color: #9356DC;
+.fa-heart:hover{
+    background-color: #9356DC;
 }
 
 @media screen and (max-width: 1024px){
@@ -296,6 +296,33 @@ header{
         width: 100%;
     }
 
+    .titre_menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+
+    .titre_menu h2{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .titre_menu i{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
     .menu{
         width: 90%;
         height: 300px;
@@ -321,12 +348,16 @@ header{
     }
 
     .liste_menu p{
-        width: 85%;
-        height: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
+    }
+
+    .liste_menu i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .prix{
@@ -345,6 +376,8 @@ header{
         justify-content: center;
         overflow: hidden;
         background-color: #B1F8D6;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
         color: white;
     }
 
