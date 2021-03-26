@@ -80,6 +80,9 @@ header{
     justify-content: center;
     }
 
+.recherche i{
+    color: #4D4D4D;
+}
 .en_tete i{
     display: flex;
     justify-content: left;
@@ -91,7 +94,7 @@ header{
 }
 
 .fa-heart:hover{
-    background-color: #9356DC;
+    color: #9356DC;
 }
 
 .liste_menu p:first-child{
@@ -120,11 +123,14 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: grey;
+        background-color: #EAEAEA;
     }
 
+
+
     input::placeholder{
-        background-color: grey;/*ajuuster margin, couleur, af  in de compléter toute la largeur*/
+        background-color: #EAEAEA;/*ajuuster margin, couleur, af  in de compléter toute la largeur*/
+        border: none; 
     }
 
     button{
@@ -139,6 +145,7 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        background-color: #F6F6F6;
     }
 
     /*Accueil - fonctionnement*/
