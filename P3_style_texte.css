@@ -34,13 +34,21 @@ body{
     margin: 0;
 }
 
-.fa-spinner{
-    width: 1vw;
-    height: 10vh;
-    display: flex;
+.loader{
+    width: 100vw;
+    height: 100vh;
+    display: none;
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 100;
+    background-color: ;
+    overflow: hidden;
+}
+
+.fa-spinner{
+    font-size: 70px;
+
 }
 
 h1,h2{
