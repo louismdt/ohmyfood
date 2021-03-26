@@ -94,6 +94,9 @@ header{
     background-color: #9356DC;
 }
 
+.liste_menu p:first-child{
+    font-family: roboto_medium;
+}
 @media screen and (max-width: 1024px){
 
 /*Accueil*/    
@@ -356,10 +359,6 @@ header{
         overflow: hidden;
     }
 
-    .liste_menu p:first-child{
-        font-family: roboto_medium;
-    }
-
     .liste_menu p{
         display: flex;
         flex-direction: column;
@@ -374,6 +373,11 @@ header{
         justify-content: space-around;
         background-color: white;
         border-radius: 15px;
+    }
+
+    .liste_menu:hover .liste_menu i{  /*penser a vérifier ce qui cloche */
+        overflow: visible;
+        margin: 70px;
     }
 
     .liste_menu i{
