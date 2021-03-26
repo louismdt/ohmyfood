@@ -37,12 +37,12 @@ body{
 .loader{
     width: 100vw;
     height: 100vh;
-    display: none;
+    display: none; /*pour le cacher mettre ebn display none*/
     align-items: center;
     justify-content: center;
     position: fixed;
     z-index: 100;
-    background-color: ;
+    /*background-color: ;     penser a utliser pipette puis definir couleur plkus tard*/
     overflow: hidden;
 }
 
@@ -353,7 +353,7 @@ header{
         height: 70px;
         display: flex;
         justify-content: center;
-        
+        overflow: hidden;
     }
 
     .liste_menu p:first-child{
@@ -377,9 +377,11 @@ header{
     }
 
     .liste_menu i{
+        width: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: -70px;
     }
 
     .prix{
