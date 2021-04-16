@@ -131,6 +131,10 @@ header{
         border-top: 2px #DADADA solid;
     }
 
+    .input{
+        background-color: #EAEAEA;
+    }
+
     input::placeholder{
         background-color: #EAEAEA;/*ajuuster margin, couleur, af  in de compléter toute la largeur*/
         border: none; 
@@ -365,12 +369,17 @@ header{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-
+        position: relative;
     }
 
-    .menu p:first-child{
-        border-bottom: 2px #B1F8D6 solid;
-        
+    .menu > p::after{
+        background-color: black; 
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        transform: translate(-50%,0);
+        width: 50px;
     }
 
     .liste_menu{
@@ -397,9 +406,8 @@ header{
         border-radius: 15px;
     }
 
-    .liste_menu:hover .liste_menu i{  /*penser a vérifier ce qui cloche */
+    .liste_menu:hover {  /*penser a vérifier ce qui cloche */
         overflow: visible;
-        margin: 70px;
     }
 
     .liste_menu i{
