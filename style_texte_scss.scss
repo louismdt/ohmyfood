@@ -92,13 +92,19 @@ header{
     display: flex;
     justify-content: center;
 }
+$color-primary: white;
+
+$color-secondary:;
+
+$color-tertiary:#9356DC;
+
 
 .fa-heart:hover{
-    color: #9356DC;
+    color: $color-tertiary;
 }
 
 .fa-heart:checked{
-    color: #9356DC;
+    color: $color-tertiary;
 }
 
 .liste_menu p:first-child{
@@ -190,7 +196,7 @@ header{
         position: absolute;
         left: -10px;
         color: white;
-        background-color: #9356DC;
+        background-color: $color-tertiary;
         border-radius: 50%;
     }
     
@@ -266,16 +272,16 @@ header{
     }
 
     footer i{
-        color: white;
+        color: $color-primary;
     }
 
     footer p{
-        color: white;
+        color: $color-primary;
     }
 
     .titre_footer h1{
         height: 10%;
-        color: white;
+        color: $color-primary;
     }
 
     .informations_footer{
@@ -303,7 +309,7 @@ header{
     }
 
     button{
-        color: white;
+        color: $color-primary;
         border: none;
         border-radius: 25px;
         background: linear-gradient(to right bottom, #FF79DA, #9356DC);
@@ -427,7 +433,7 @@ header{
         background-color: #B1F8D6;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        color: white;
+        color: $color-primary;
     }
 
     .menu button{
