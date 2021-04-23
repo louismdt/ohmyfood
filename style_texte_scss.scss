@@ -48,7 +48,6 @@ body{
 
 .fa-spinner{
     font-size: 70px;
-
 }
 
 h1,h2{
@@ -94,7 +93,7 @@ header{
 }
 $color-primary: white;
 
-$color-secondary:;
+$color-secondary: #F2F2F2;
 
 $color-tertiary:#9356DC;
 
@@ -124,7 +123,7 @@ $color-tertiary:#9356DC;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        background-color: #F2F2F2;
+        background-color: $color-secondary;
     }
 
     .recherche{
@@ -178,7 +177,7 @@ $color-tertiary:#9356DC;
         align-items: center;
         justify-content: space-around;
         border-radius: 15px;
-        background-color: #F2F2F2;
+        background-color: $color-secondary;
         box-shadow: 0px 5px 10px grey;
         position: relative;
     }
@@ -202,7 +201,7 @@ $color-tertiary:#9356DC;
     
     .restaurants{
         height: 1200px;
-        background-color: #F2F2F2;
+        background-color: $color-secondary;
     }
 
     .liste_restaurant{

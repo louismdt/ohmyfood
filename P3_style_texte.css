@@ -368,7 +368,6 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
         position: relative;
     }
 
@@ -378,8 +377,15 @@ header{
         display: block;
         height: 1px;
         position: absolute;
-        transform: translate(-50%,0);
         width: 50px;
+    }
+
+    .menu > p{
+        margin-left: 20px;
+    }
+
+    .menu .liste_menu{
+        margin: auto;
     }
 
     .liste_menu{

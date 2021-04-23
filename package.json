@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louismdt/ohmyfood.git"
+  },
+  "author": "louis maudet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louismdt/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/louismdt/ohmyfood#readme"
+}
