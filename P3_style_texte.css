@@ -99,7 +99,7 @@ header {
   /*champ de recherche*/
   aside {
     width: 100%;
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -139,6 +139,12 @@ header {
 
   .informations p:first-child {
     font-family: roboto_medium;
+  }
+
+  .informations p{
+    width: 70%;
+    text-align: center;
+    margin: 0;
   }
 
   /*Accueil - fonctionnement*/
