@@ -297,6 +297,10 @@ $color-tertiary:#9356DC;
         justify-content: space-around;
     }
 
+    .informations a{
+        height: 30px;
+    }
+
     .proposer{
         width: 100%;
         height: 20%;
@@ -325,7 +329,8 @@ $color-tertiary:#9356DC;
     .image_restaurant{
         width: 100%;
         height: 150px;
-        overflow: hidden;
+        position: absolute;
+        z-index: -1000;
     }
 
     .image_restaurant img{
@@ -337,6 +342,8 @@ $color-tertiary:#9356DC;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 130px;
+        z-index: 1000;
         background-color: #F2F2F2;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
