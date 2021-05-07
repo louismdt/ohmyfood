@@ -259,6 +259,9 @@ header a {
 
   footer i {
     color: white;
+    width: 20px;
+    text-align: center;
+    margin-right: 5px;
   }
 
   footer p {
