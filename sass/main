@@ -1,11 +1,14 @@
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
+@import "./base/_base";
+@import "./base/_typo";
+
+@import "./components/_buttons";
+
+@import "./layout/_breakpoint";
+@import "./layout/_header";
+@import "./layout/_header_pages";
+@import "./layout/_footer";
+
+@import "./pages/_index";
+@import "./pages/_pages";
+
+@import "./utils/";

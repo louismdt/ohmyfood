@@ -1,0 +1,26 @@
+@font-face{
+	font-family: "shrikhand";
+		src: url("Police/Shrikhand/Shrikhand-Regular.eot") format("eot"),
+			url("Police/Shrikhand/Shrikhand-Regular.woff") format("woff"),
+			url("Police/Shrikhand/Shrikhand-Regular.ttf") format("truetype"),
+			url("Police/Shrikhand/Shrikhand-Regular.svg") format("svg");
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "roboto_light";
+		src: url("Police/Roboto/Roboto-Light.ttf") format("eot"),
+			url("Police/Roboto/Roboto-Light.woff") format("woff"),
+			url("Police/Roboto/Roboto-Light.ttf") format("truetype"),
+			url("Police/Roboto/Roboto-Light.svg") format("svg");
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "roboto_medium";
+		src: url("Police/Roboto/Roboto-Medium.ttf") format("eot"),
+			url("Police/Roboto/Roboto-Medium.woff") format("woff"),
+			url("Police/Roboto/Roboto-Medium.ttf") format("truetype"),
+			url("Police/Roboto/Roboto-Medium.svg") format("svg");
+	font-weight: normal;
+}
