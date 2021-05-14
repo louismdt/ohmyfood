@@ -37,20 +37,27 @@ body{
 .loader{
     width: 100vw;
     height: 100vh;
-    display: none; /*pour le cacher mettre ebn display none*/
+    display: flex; /*pour le cacher mettre en display none*/
     align-items: center;
     justify-content: center;
     position: fixed;
     z-index: 100;
     background-color: white;
-    overflow: hidden;
-    -webkit-animation: spin 1s linear 0.5s infinite;
-  
+    visibility: hidden;
+    -webkit-animation: loader 2s linear;
+    i {
+        -webkit-animation: spin 1s linear infinite;
+    }
   }
   
   @-webkit-keyframes spin{
     0%{-webkit-transform: rotate(0deg); transform: rotate(0deg); }
     100%{-webkit-transform: rotate(360deg); transform: rotate(360deg); }
+  }
+
+  @-webkit-keyframes loader{
+      0%{visibility: visible;}
+      100%{visibility: hidden;}
   }
 
 .fa-spinner{
@@ -269,12 +276,24 @@ $color-tertiary:#9356DC;
         background-color: white;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+        position: relative;
+        i{
+            position: absolute;
+            right: 30px;
+        }
+        :nth-child(3){
+            visibility: hidden;
+            &:hover{
+                visibility: visible;
+            }
+        }
     }
 
     .bloc_texte{
         width: 80%;
         display: flex;
         flex-direction: column;
+        
     }
 
     .bloc_texte p{
@@ -308,7 +327,6 @@ $color-tertiary:#9356DC;
         width: 100%;
         height: 260px;
         background-color: rgb(44, 42, 42);
-        padding-left: 5%;
     }
 
     footer i{
@@ -326,6 +344,7 @@ $color-tertiary:#9356DC;
     .titre_footer h1{
         height: 10%;
         color: $color-primary;
+        margin: 10px; /*ajuster dimensions ,,,,,, ctrl /*/
     }
 
     .informations_footer{
