@@ -63,6 +63,21 @@ header {
   justify-content: center;
   position: relative;
 }
+header h1 {
+  height: 100%;
+  margin: 0;
+}
+header a {
+  width: 10px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+header i {
+  height: 100%;
+  position: absolute;
+  left: 15px;
+}
 
 .recherche i {
   color: #4D4D4D;
