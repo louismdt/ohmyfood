@@ -42,9 +42,16 @@ body{
     justify-content: center;
     position: fixed;
     z-index: 100;
-    /*background-color: ;     penser a utliser pipette puis definir couleur plkus tard*/
+    background-color: white;
     overflow: hidden;
-}
+    -webkit-animation: spin 1s linear 0.5s infinite;
+  
+  }
+  
+  @-webkit-keyframes spin{
+    0%{-webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100%{-webkit-transform: rotate(360deg); transform: rotate(360deg); }
+  }
 
 .fa-spinner{
     font-size: 70px;
@@ -73,21 +80,6 @@ header{
     display: flex;
     justify-content: center;
     position: relative;
-    h1{
-        height: 100%;
-        margin: 0;
-    }
-    a{
-        width: 10px;
-        height: 50%;
-        display: flex;
-        align-items: center;
-    }
-    i{
-        height: 100%;
-        position: absolute;
-        left: 15px;
-    }
 }
 
 .recherche i{
