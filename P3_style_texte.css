@@ -109,10 +109,6 @@ header a {
   color: #9356DC;
 }
 
-.fa-heart:checked {
-  color: #9356DC;
-}
-
 .liste_menu p:first-child {
   font-family: roboto-medium;
 }
@@ -261,11 +257,19 @@ button {
   position: absolute;
   right: 30px;
 }
+.description :nth-child(2) {
+  visibility: visible;
+  z-index: 20;
+}
+.description :nth-child(2):hover {
+  visibility: hidden;
+}
 .description :nth-child(3) {
   visibility: hidden;
 }
 .description :nth-child(3):hover {
   visibility: visible;
+  z-index: 20;
 }
 
 .bloc_texte {
@@ -381,7 +385,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 200px;
   z-index: 1000;
   background-color: #F2F2F2;
   border-top-left-radius: 25px;
