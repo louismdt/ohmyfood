@@ -422,11 +422,8 @@ header a {
     justify-content: space-around;
     align-items: center;
   }
-
   .menu > p {
-    display: flex;
-    justify-content: flex-start;
-    width: 40px;
+    width: 30px;
     border-bottom: 2px #B1F8D6 solid;
   }
 
@@ -459,11 +456,16 @@ header a {
     background-color: white;
     border-radius: 15px;
   }
+  .liste_menu_enfant p {
+    margin: 0;
+  }
   .liste_menu_enfant :first-child {
     width: 60%;
+    margin: 0;
   }
   .liste_menu_enfant :nth-child(2) {
-    width: 60%;
+    width: 40%;
+    margin: 0;
   }
 
   .liste_menu:hover .liste_menu i {
@@ -478,6 +480,12 @@ header a {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: roboto_medium;
+    font-weight: bold;
+  }
+  .prix:hover {
+    overflow: hidden;
+    right: 40px;
   }
 
   .fa-check-circle {
@@ -492,7 +500,22 @@ header a {
     border-bottom-right-radius: 15px;
     color: white;
   }
+  .fa-check-circle:hover {
+    overflow: visible;
+    margin: -70px;
+    -webkit-animation: rotate_i 0.5s infinite;
+  }
 
+  @-webkit-keyframes rotate_i {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
   .menu button {
     display: flex;
     align-items: center;
