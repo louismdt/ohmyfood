@@ -485,7 +485,7 @@ header a {
   }
   .prix:hover {
     overflow: hidden;
-    right: 40px;
+    -webkit-animation: slide 0.8s linear;
   }
 
   .fa-check-circle {
@@ -514,6 +514,14 @@ header a {
     100% {
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes slide {
+    from {
+      margin: 70px;
+    }
+    to {
+      margin: 0px;
     }
   }
   .menu button {
