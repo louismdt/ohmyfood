@@ -293,11 +293,9 @@ $color-tertiary:#9356DC;
         width: 80%;
         display: flex;
         flex-direction: column;
-        
-    }
-
-    .bloc_texte p{
-        margin: 0;
+        p{
+            margin: 0;
+        }
     }
 
     .new{
@@ -327,18 +325,16 @@ $color-tertiary:#9356DC;
         width: 100%;
         height: 260px;
         background-color: rgb(44, 42, 42);
-    }
-
-    footer i{
-        color: $color-primary;
-        width: 20px;
-        text-align: center;
-        margin-right: 5px;
-    }
-
-    footer p{
-        color: $color-primary;
-        margin: 0;
+        i{
+            color: $color-primary;
+            width: 20px;
+            text-align: center;
+            margin-right: 5px;
+        }
+        p{
+            color: $color-primary;
+            margin: 0;
+        }
     }
 
     .titre_footer h1{
@@ -399,10 +395,9 @@ $color-tertiary:#9356DC;
         height: 150px;
         position: absolute;
         z-index: -1000;
-    }
-
-    .image_restaurant img{
-        width: 100%;
+        img{
+            width: 100%;
+        }
     }
 
     .restaurant{
@@ -424,24 +419,22 @@ $color-tertiary:#9356DC;
         justify-content: space-around;
         align-items: center;
         margin: 0;
-    }
-
-    .titre_menu h2{
-        width: 70%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-
-    .titre_menu i{
-        width: 30%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
+        h2{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        i{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
     }
 
     .menu{
@@ -467,13 +460,19 @@ $color-tertiary:#9356DC;
         display: flex;
         justify-content: center;
         overflow: hidden;
-    }
-
-    .liste_menu p{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
+        p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        i{
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -70px;
+        }
     }
 
     .liste_menu_enfant{
@@ -483,19 +482,17 @@ $color-tertiary:#9356DC;
         justify-content: space-around;
         background-color: white;
         border-radius: 15px;
+        :first-child{
+            width: 60%;
+        }
+        :nth-child(2){
+            width: 60%;
+        }
     }
 
     .liste_menu:hover .liste_menu i{  /*penser a vérifier ce qui cloche */
         overflow: visible;
         margin: 70px;
-    }
-
-    .liste_menu i{
-        width: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: -70px;
     }
 
     .prix{
