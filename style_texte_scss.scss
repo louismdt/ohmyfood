@@ -126,7 +126,7 @@ $color-tertiary:#9356DC;
 .liste_menu p:first-child{
     font-family: roboto-medium;
 }
-@media screen and (max-width: 1024px){
+
 
 /*Accueil*/    
 
@@ -291,6 +291,7 @@ $color-tertiary:#9356DC;
         p{
             margin: 0;
         }
+        
     }
 
     .new{
@@ -452,7 +453,10 @@ $color-tertiary:#9356DC;
         height: 70px;
         display: flex;
         justify-content: center;
-        overflow: hidden;
+        overflow: hidden; 
+        background-color: white;
+        border-radius: 15px;
+        position: relative;
         p{
             display: flex;
             flex-direction: column;
@@ -465,7 +469,11 @@ $color-tertiary:#9356DC;
             justify-content: center;
             align-items: center;
             margin-right: -70px;
+            transition: margin 1s linear; 
         }
+        &:hover i{
+                margin-right: 0;
+            }
     }
 
     .liste_menu_enfant{
@@ -473,17 +481,16 @@ $color-tertiary:#9356DC;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        background-color: white;
-        border-radius: 15px;
+
         p{
             margin: 0;
         }
         :first-child{
-            width: 60%;
+            width: 75%;
             margin: 0;
         }
         :nth-child(2){
-            width: 40%;
+            width: 40px;
             margin: 0;
         }
     }
@@ -501,10 +508,6 @@ $color-tertiary:#9356DC;
         justify-content: center;
         font-family: roboto_medium;
         font-weight: bold;
-        &:hover{
-            overflow: hidden;
-            -webkit-animation: slide 0.8s linear;
-        }
     }
 
     .fa-check-circle{
@@ -519,6 +522,7 @@ $color-tertiary:#9356DC;
         border-bottom-right-radius: 15px;
         color: $color-primary;
         &:hover{
+            position: absolute;
             overflow: visible;
             margin: -70px;
             -webkit-animation: rotate_i 0.5s infinite;
@@ -530,14 +534,6 @@ $color-tertiary:#9356DC;
         100%{-webkit-transform: rotate(360deg); transform: rotate(360deg); }
     }
 
-    @-webkit-keyframes slide{
-        from{
-            margin: 70px;
-        }
-        to{
-            margin: 0px;
-        }
-    }
 
 
 
@@ -546,4 +542,4 @@ $color-tertiary:#9356DC;
         align-items: center;
         justify-content: center;
     }
-}
+
