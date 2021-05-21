@@ -78,27 +78,49 @@ a {
   text-decoration: none;
 }
 
-header {
+.header_home {
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: center;
   position: relative;
 }
-header h1 {
+.header_home h1 {
   height: 100%;
   margin: 0;
 }
-header i {
+.header_home a {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header_menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.header_menu h1 {
+  height: 100%;
+  margin: 0;
+}
+.header_menu i {
   height: 100%;
   position: absolute;
   left: 15px;
 }
-header a {
-  width: 10px;
-  height: 50%;
+.header_menu a {
+  height: 100%;
   display: flex;
   align-items: center;
+}
+.header_menu :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .recherche i {

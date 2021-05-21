@@ -81,7 +81,25 @@ a {
     text-decoration: none;
 }
 
-header{
+.header_home{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    h1{
+        height: 100%;
+        margin: 0;
+    }
+    a{
+        width: 100px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.header_menu{
     width: 100%;
     height: 50px;
     display: flex;
@@ -97,10 +115,14 @@ header{
         left: 15px;
     }
     a{
-        width: 10px;
-        height: 50%;
+        height: 100%;
         display: flex;
         align-items: center;
+    }
+    :first-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
