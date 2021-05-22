@@ -141,9 +141,7 @@ $color-tertiary:#9356DC;
     color: $color-tertiary;
 }
 
-.liste_menu p:first-child{
-    font-family: roboto-medium;
-}
+
 
 
 /*Accueil*/    
@@ -342,28 +340,8 @@ $color-tertiary:#9356DC;
 
 
 
-    /*footer commun*/
-    footer{
-        width: 100%;
-        height: 260px;
-        background-color: rgb(44, 42, 42);
-        i{
-            color: $color-primary;
-            width: 20px;
-            text-align: center;
-            margin-right: 5px;
-        }
-        p{
-            color: $color-primary;
-            margin: 0;
-        }
-    }
 
-    .titre_footer h1{
-        height: 10%;
-        color: $color-primary;
-        margin: 10px; /*ajuster dimensions ,,,,,, ctrl /*/
-    }
+
 
     .informations_footer{
         width: 100%;
@@ -377,21 +355,8 @@ $color-tertiary:#9356DC;
         height: 30px;
     }
 
-    .proposer{
-        width: 100%;
-        height: 20%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
 
-    .partenaire{
-        width: 100%;
-        height: 20%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
+
 
     button{
         color: $color-primary;
@@ -472,8 +437,6 @@ $color-tertiary:#9356DC;
         }
     }
 
-
-
     .liste_menu{
         width: 90%;
         height: 70px;
@@ -488,6 +451,9 @@ $color-tertiary:#9356DC;
             flex-direction: column;
             align-items: center;
             margin: 0;
+        }
+        p:first-child{
+            font-family: roboto_medium;
         }
         i{
             width: 70px;
@@ -569,3 +535,41 @@ $color-tertiary:#9356DC;
         justify-content: center;
     }
 
+    /*footer commun*/
+    footer{
+        width: 100%;
+        height: 260px;
+        background-color: rgb(44, 42, 42);
+        i{
+            color: $color-primary;
+            width: 20px;
+            text-align: center;
+            margin-right: 5px;
+        }
+        p{
+            color: $color-primary;
+            margin: 0;
+        }
+    }
+
+    .titre_footer h1{
+        height: 10%;
+        color: $color-primary;
+        margin: 10px; /*ajuster dimensions ,,,,,, ctrl /*/
+    }
+
+    .proposer{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .partenaire{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
