@@ -32,6 +32,9 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    p{
+        font-family: roboto_light;
+    }
 }
 
 .loader{
@@ -41,7 +44,7 @@ body{
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 100;
+    z-index: 10000;
     background-color: white;
     visibility: hidden;
     -webkit-animation: loader 2s linear;
@@ -68,13 +71,9 @@ h1,h2{
     font-family: shrikhand;
 }
 
-body p{
-    font-family: roboto_light;
-}
 
-.carte_nom_restaurant{
-    font-family: roboto_medium;
-}
+
+
 
 a {
     color: black;
@@ -198,6 +197,21 @@ $color-tertiary:#9356DC;
             font-weight: bold;
             font-size: x-large;
         }
+        a{
+            height: 30px;
+        }
+    }
+    
+    button{
+        color: $color-primary;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+        box-shadow: 0px 5px 10px grey ;
+        &:hover{
+            filter: brightness(120%);
+            box-shadow: 5px 5px 5px grey;
+        }
     }
 
     /*Accueil - fonctionnement*/
@@ -315,7 +329,10 @@ $color-tertiary:#9356DC;
         p{
             margin: 0;
         }
-        
+    }
+
+    .carte_nom_restaurant{
+        font-family: roboto_medium;
     }
 
     .new{
@@ -326,7 +343,7 @@ $color-tertiary:#9356DC;
         right: 15px;
         color: #0A8D6D;
         background-color: #92E2D0;
-        z-index: 10000;
+        z-index: 500;
         margin: 0;
         display: flex;
         justify-content: center;
@@ -336,39 +353,7 @@ $color-tertiary:#9356DC;
         align-items: center;
     }
 
-    /*image commune*/
 
-
-
-
-
-
-    .informations_footer{
-        width: 100%;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .informations a{
-        height: 30px;
-    }
-
-
-
-
-    button{
-        color: $color-primary;
-        border: none;
-        border-radius: 25px;
-        background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-        box-shadow: 0px 5px 10px grey ;
-        &:hover{
-            filter: brightness(120%);
-            box-shadow: 5px 5px 5px grey;
-        }
-    }
 
     /*Page restaurant*/
 
@@ -565,11 +550,21 @@ $color-tertiary:#9356DC;
         justify-content: flex-start;
         align-items: center;
     }
-    
+
     .partenaire{
         width: 100%;
         height: 20%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+    }    
+    
+    .informations_footer{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
+
+
