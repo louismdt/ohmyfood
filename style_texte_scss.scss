@@ -433,6 +433,7 @@ $color-tertiary:#9356DC;
         > p{
             width: 30px;
             border-bottom: 2px #B1F8D6 solid;
+            
         }
     }
 
@@ -472,7 +473,6 @@ $color-tertiary:#9356DC;
         display: flex;
         align-items: center;
         justify-content: space-around;
-
         p{
             display: flex;
             justify-content: flex-end;
@@ -564,7 +564,7 @@ $color-tertiary:#9356DC;
     }
 
     .informations_footer{
-        width: 100%;
+        width: 90%;
         height: 150px;
         display: flex;
         flex-direction: column;

@@ -544,7 +544,7 @@ footer p {
 }
 
 .informations_footer {
-  width: 100%;
+  width: 90%;
   height: 150px;
   display: flex;
   flex-direction: column;
