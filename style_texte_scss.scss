@@ -170,8 +170,8 @@ $color-tertiary:#9356DC;
     }
 
     input::placeholder{
-        background-color: #EAEAEA;/*ajuuster margin, couleur, af  in de compléter toute la largeur*/
-        border: none; 
+        background-color: #EAEAEA;/*ajuster margin, couleur, afin de compléter toute la largeur*/
+        border: none;
     }
 
     button{
@@ -214,7 +214,7 @@ $color-tertiary:#9356DC;
         }
     }
 
-    /*Accueil - fonctionnement*/
+    /*Section accueil*/
 
     .onglet{
         width: 100%;
@@ -238,8 +238,6 @@ $color-tertiary:#9356DC;
             background-color: #ddc2ff; /*revoir code couleur*/
         }
     }
-
-  
 
     .numero_onglet{
         width: 20px;
@@ -353,9 +351,7 @@ $color-tertiary:#9356DC;
         align-items: center;
     }
 
-
-
-    /*Page restaurant*/
+/*Page restaurant*/
 
     .en_tete i{
         position: absolute;
@@ -460,15 +456,21 @@ $color-tertiary:#9356DC;
         justify-content: space-around;
 
         p{
+            display: flex;
+            justify-content: flex-end;
             margin: 0;
+            text-overflow: ellipsis;
         }
         :first-child{
-            width: 75%;
-            margin: 0;
+            width: 100%;
         }
         :nth-child(2){
+            width: 100%;
+        }
+        p.prix{
             width: 40px;
-            margin: 0;
+            padding-right: 10px;
+            padding-bottom: 10px;
         }
     }
 
@@ -540,7 +542,16 @@ $color-tertiary:#9356DC;
     .titre_footer h1{
         height: 10%;
         color: $color-primary;
-        margin: 10px; /*ajuster dimensions ,,,,,, ctrl /*/
+        margin: 15px; /*ajuster dimensions ,,,,,, ctrl /*/
+    }
+
+    .informations_footer{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 15px;
     }
 
     .proposer{
@@ -557,14 +568,5 @@ $color-tertiary:#9356DC;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-    }    
-    
-    .informations_footer{
-        width: 100%;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
-
 
