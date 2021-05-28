@@ -307,6 +307,7 @@ button:hover {
 }
 .description :nth-child(2):hover {
   visibility: hidden;
+  z-index: -20;
 }
 .description :nth-child(3) {
   visibility: hidden;
@@ -314,6 +315,7 @@ button:hover {
 .description :nth-child(3):hover {
   visibility: visible;
   z-index: 20;
+  color: #9356DC;
 }
 
 .bloc_texte {
@@ -373,6 +375,11 @@ button:hover {
   background-color: #F2F2F2;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  position: relative;
+}
+.restaurant > button {
+  position: absolute;
+  bottom: 60px;
 }
 
 .titre_menu {
@@ -406,25 +413,34 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: left;
 }
 .menu > p {
-  width: 30px;
-  border-bottom: 2px #B1F8D6 solid;
+  margin-left: 10px;
+}
+.menu > p::after {
+  width: 25px;
+  height: 2px;
+  z-index: 10;
+  background-color: #B1F8D6;
+  content: "";
+  display: block;
+}
+.menu > .liste_menu {
+  margin: auto;
 }
 
 .liste_menu {
   width: 90%;
   height: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
   background-color: white;
   border-radius: 15px;
   position: relative;
 }
 .liste_menu p {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
@@ -438,7 +454,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-right: -70px;
-  transition: margin 1s linear;
+  transition: margin 0.6s linear;
 }
 .liste_menu:hover i {
   margin-right: 0;
@@ -450,20 +466,27 @@ button:hover {
   align-items: center;
   justify-content: space-around;
 }
-.liste_menu_enfant p {
+.liste_menu_enfant > div {
+  width: 35%;
   display: flex;
-  justify-content: flex-end;
-  margin: 0;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.liste_menu_enfant > div > p {
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
 }
 .liste_menu_enfant :first-child {
-  width: 100%;
+  width: 80%;
 }
 .liste_menu_enfant :nth-child(2) {
-  width: 100%;
+  width: 80%;
 }
 .liste_menu_enfant p.prix {
-  width: 40px;
+  width: 30px;
   padding-right: 10px;
   padding-bottom: 10px;
 }
