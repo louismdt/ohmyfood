@@ -118,10 +118,6 @@ a {
   justify-content: center;
 }
 
-.recherche i {
-  color: #4D4D4D;
-}
-
 .fa-heart:hover {
   color: #9356DC;
 }
@@ -147,11 +143,12 @@ aside {
   background-color: #EAEAEA;
   border-top: 2px #DADADA solid;
 }
-
-input::placeholder {
-  background-color: #EAEAEA;
-  /*ajuster margin, couleur, afin de compléter toute la largeur*/
-  border: none;
+.recherche i {
+  width: 10%;
+  color: #4D4D4D;
+}
+.recherche p {
+  font-size: 0.9em;
 }
 
 button {
@@ -413,10 +410,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: left;
 }
 .menu > p {
-  margin-left: 10px;
+  padding-left: 10px;
 }
 .menu > p::after {
   width: 25px;
@@ -460,6 +456,12 @@ button:hover {
   margin-right: 0;
 }
 
+.liste_menu:hover .liste_menu i {
+  /*penser a vérifier ce qui cloche */
+  overflow: visible;
+  margin: 70px;
+}
+
 .liste_menu_enfant {
   width: 100%;
   display: flex;
@@ -485,26 +487,16 @@ button:hover {
 .liste_menu_enfant :nth-child(2) {
   width: 80%;
 }
-.liste_menu_enfant p.prix {
-  width: 30px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-
-.liste_menu:hover .liste_menu i {
-  /*penser a vérifier ce qui cloche */
-  overflow: visible;
-  margin: 70px;
-}
-
-.prix {
+.liste_menu_enfant .prix {
   width: 15%;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   font-family: roboto_medium;
   font-weight: bold;
+}
+.liste_menu_enfant .prix p {
+  width: 30px;
 }
 
 .fa-check-circle {

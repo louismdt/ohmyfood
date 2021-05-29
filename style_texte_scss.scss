@@ -124,11 +124,6 @@ a {
         justify-content: center;
     }
 }
-
-.recherche i{
-    color: #4D4D4D;
-}
-
 $color-primary: white;
 
 $color-secondary: #F2F2F2;
@@ -139,8 +134,6 @@ $color-tertiary:#9356DC;
 .fa-heart:hover{
     color: $color-tertiary;
 }
-
-
 
 
 /*Accueil*/    
@@ -167,11 +160,13 @@ $color-tertiary:#9356DC;
         justify-content: center;
         background-color: #EAEAEA;
         border-top: 2px #DADADA solid;
-    }
-
-    input::placeholder{
-        background-color: #EAEAEA;/*ajuster margin, couleur, afin de compléter toute la largeur*/
-        border: none;
+        i{
+            width: 10%;
+            color: #4D4D4D;
+        }
+        p{
+            font-size: 0.9em;
+        }
     }
 
     button{
@@ -436,9 +431,8 @@ $color-tertiary:#9356DC;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: left;
         > p{
-            margin-left: 10px;
+            padding-left: 10px;
             &::after{
             width: 25px;
             height: 2px;
@@ -483,6 +477,11 @@ $color-tertiary:#9356DC;
             }
     }
 
+    .liste_menu:hover .liste_menu i{  /*penser a vérifier ce qui cloche */
+        overflow: visible;
+        margin: 70px;
+    }
+
     .liste_menu_enfant{
         width: 100%;
         display: flex;
@@ -506,27 +505,18 @@ $color-tertiary:#9356DC;
         }
         :nth-child(2){
             width: 80%;
+        }  
+        .prix{
+            width: 15%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            font-family: roboto_medium;
+            font-weight: bold;
+            p{
+                width: 30px;
+            }
         }
-        p.prix{
-            width: 30px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-        }
-    }
-
-    .liste_menu:hover .liste_menu i{  /*penser a vérifier ce qui cloche */
-        overflow: visible;
-        margin: 70px;
-    }
-
-    .prix{
-        width: 15%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: roboto_medium;
-        font-weight: bold;
     }
 
     .fa-check-circle{
