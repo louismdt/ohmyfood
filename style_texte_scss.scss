@@ -1,4 +1,4 @@
-/*police*/
+/*police + couleur*/
 
 @font-face{
 	font-family: "shrikhand";
@@ -27,6 +27,14 @@
 	font-weight: normal;
 }
 
+$color-primary: white;
+
+$color-secondary: #F2F2F2;
+
+$color-tertiary:#9356DC;
+
+/*Body*/
+
 body{
     width: 100%;
     display: flex;
@@ -34,6 +42,13 @@ body{
     margin: 0;
     p{
         font-family: roboto_light;
+    }
+    h1,h2{
+        font-family: shrikhand;
+    }
+    a {
+        color: black;
+        text-decoration: none;
     }
 }
 
@@ -65,19 +80,6 @@ body{
 
 .fa-spinner{
     font-size: 70px;
-}
-
-h1,h2{
-    font-family: shrikhand;
-}
-
-
-
-
-
-a {
-    color: black;
-    text-decoration: none;
 }
 
 .header_home{
@@ -124,14 +126,10 @@ a {
         justify-content: center;
     }
 }
-$color-primary: white;
-
-$color-secondary: #F2F2F2;
-
-$color-tertiary:#9356DC;
 
 
-.fa-heart:hover{
+
+.fa-heart:active{
     color: $color-tertiary;
 }
 
@@ -169,10 +167,7 @@ $color-tertiary:#9356DC;
         }
     }
 
-    button{
-        width: 50%;
-        height: 40px;
-    }
+
 
     .informations{
         width: 100%;
@@ -198,10 +193,12 @@ $color-tertiary:#9356DC;
     }
     
     button{
+        width: 50%;
+        height: 40px;
         color: $color-primary;
         border: none;
         border-radius: 25px;
-        background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+        background: linear-gradient(to right bottom, #FF79DA, $color-tertiary);
         box-shadow: 0px 5px 10px grey ;
         &:hover{
             filter: brightness(120%);
@@ -456,6 +453,7 @@ $color-tertiary:#9356DC;
         background-color: white;
         border-radius: 15px;
         position: relative;
+        -webkit-animation: chargement 1s linear infinite;
         p{
             flex-direction: column;
             align-items: center;
@@ -476,6 +474,24 @@ $color-tertiary:#9356DC;
                 margin-right: 0;
             }
     }
+/*vérifier le problème keyframes ou changer et mettre en, css ?*/
+@-webkit-keyframes chargement {
+    0%{
+        opacity: 0%;
+    }
+    70%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+
 
     .liste_menu:hover .liste_menu i{  /*penser a vérifier ce qui cloche */
         overflow: visible;
