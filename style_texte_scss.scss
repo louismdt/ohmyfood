@@ -129,8 +129,8 @@ body{
 
 
 
-.fa-heart:active{
-    color: $color-tertiary;
+.fa-heart:hover{
+    background: linear-gradient(to right bottom, #FF79DA, $color-tertiary);
 }
 
 
