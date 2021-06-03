@@ -32,6 +32,9 @@ $color-primary: white;
 $color-secondary: #F2F2F2;
 
 $color-tertiary:#9356DC;
+// .fa-heart{
+//     color: $color-tertiary;
+// }
 
 /*Body*/
 
@@ -125,12 +128,6 @@ body{
         align-items: center;
         justify-content: center;
     }
-}
-
-
-
-.fa-heart:hover{
-    background: linear-gradient(to right bottom, #FF79DA, $color-tertiary);
 }
 
 
@@ -313,23 +310,7 @@ body{
         i{
             position: absolute;
             right: 30px;
-        }
-        :nth-child(2){
-            visibility: visible;
-            z-index: 20;
-            &:hover{
-                visibility: hidden;
-                z-index: -20;
-            }
-        }
-        :nth-child(3){
-            visibility: hidden;
-            &:hover{
-                visibility: visible;
-                z-index: 20;
-                color: $color-tertiary;
-            }
-        }
+        } 
     }
 
     .bloc_texte{
@@ -558,9 +539,6 @@ body{
         0%{-webkit-transform: rotate(0deg); transform: rotate(0deg); }
         100%{-webkit-transform: rotate(360deg); transform: rotate(360deg); }
     }
-
-
-
 
     .menu button{
         display: flex;

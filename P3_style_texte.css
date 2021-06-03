@@ -117,10 +117,6 @@ body a {
   justify-content: center;
 }
 
-.fa-heart:hover {
-  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-}
-
 /*Accueil*/
 /*champ de recherche*/
 aside {
@@ -293,22 +289,6 @@ button:hover {
 .description i {
   position: absolute;
   right: 30px;
-}
-.description :nth-child(2) {
-  visibility: visible;
-  z-index: 20;
-}
-.description :nth-child(2):hover {
-  visibility: hidden;
-  z-index: -20;
-}
-.description :nth-child(3) {
-  visibility: hidden;
-}
-.description :nth-child(3):hover {
-  visibility: visible;
-  z-index: 20;
-  color: #9356DC;
 }
 
 .bloc_texte {
