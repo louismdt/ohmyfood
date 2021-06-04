@@ -32,9 +32,7 @@ $color-primary: white;
 $color-secondary: #F2F2F2;
 
 $color-tertiary:#9356DC;
-// .fa-heart{
-//     color: $color-tertiary;
-// }
+
 
 /*Body*/
 
@@ -310,7 +308,28 @@ body{
         i{
             position: absolute;
             right: 30px;
-        } 
+        }
+        :nth-child(2){
+            
+        }
+        :nth-child(3){
+            opacity: 0;
+            &:hover{
+                opacity: 1;
+                color: $color-tertiary;
+                -webkit-animation-name: heart-hover;
+                -webkit-animation: slide-top 0.3s cubic-bezier(0.250,0.460,0.450,0.940) both;
+            }
+        }
+    }
+
+    @keyframes heart-hover{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
     }
 
     .bloc_texte{
@@ -406,9 +425,7 @@ body{
     .menu{
         width: 100%;
         height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+
         > p{
             padding-left: 10px;
             &::after{
@@ -421,7 +438,13 @@ body{
             }
         }
         > .liste_menu{
-            margin: auto;
+            margin: 10px auto;
+        }
+        :nth-child(3){
+            animation-duration: 1s, 1.5s;
+        }
+        :nth-child(4){
+            animation-duration: 1.5s, 1.5s;
         }
     }
 
@@ -434,7 +457,7 @@ body{
         background-color: white;
         border-radius: 15px;
         position: relative;
-        -webkit-animation: chargement 1s linear infinite;
+        -webkit-animation: chargement 0.5s linear, decal 1.5s linear;
         p{
             flex-direction: column;
             align-items: center;
@@ -451,6 +474,7 @@ body{
             margin-right: -70px;
             transition: margin 0.6s linear; 
         }
+        
         &:hover i{
                 margin-right: 0;
             }
@@ -459,20 +483,20 @@ body{
 @-webkit-keyframes chargement {
     0%{
         opacity: 0%;
-    }
-    70%{
-        opacity: 50%;
+        
     }
     100%{
         opacity: 100%;
     }
 }
-
-
-
-
-
-
+@-webkit-keyframes decal {
+    0%{
+        margin-top: 30px;
+    }
+    100%{
+        margin-top: 10px;
+    }
+}
 
     .liste_menu:hover .liste_menu i{  /*penser a vérifier ce qui cloche */
         overflow: visible;
@@ -527,17 +551,7 @@ body{
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         color: $color-primary;
-        &:hover{
-            position: absolute;
-            overflow: visible;
-            margin: -70px;
-            -webkit-animation: rotate_i 0.5s infinite;
-        }
-    }
-
-    @-webkit-keyframes rotate_i{
-        0%{-webkit-transform: rotate(0deg); transform: rotate(0deg); }
-        100%{-webkit-transform: rotate(360deg); transform: rotate(360deg); }
+        
     }
 
     .menu button{

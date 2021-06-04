@@ -290,7 +290,24 @@ button:hover {
   position: absolute;
   right: 30px;
 }
+.description :nth-child(3) {
+  opacity: 0;
+}
+.description :nth-child(3):hover {
+  opacity: 1;
+  color: #9356DC;
+  -webkit-animation-name: heart-hover;
+  -webkit-animation: slide-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
+@keyframes heart-hover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .bloc_texte {
   width: 80%;
   display: flex;
@@ -383,9 +400,6 @@ button:hover {
 .menu {
   width: 100%;
   height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 .menu > p {
   padding-left: 10px;
@@ -399,7 +413,13 @@ button:hover {
   display: block;
 }
 .menu > .liste_menu {
-  margin: auto;
+  margin: 10px auto;
+}
+.menu :nth-child(3) {
+  animation-duration: 1s, 1.5s;
+}
+.menu :nth-child(4) {
+  animation-duration: 1.5s, 1.5s;
 }
 
 .liste_menu {
@@ -411,7 +431,7 @@ button:hover {
   background-color: white;
   border-radius: 15px;
   position: relative;
-  -webkit-animation: chargement 1s linear infinite;
+  -webkit-animation: chargement 0.5s linear, decal 1.5s linear;
 }
 .liste_menu p {
   flex-direction: column;
@@ -438,11 +458,16 @@ button:hover {
   0% {
     opacity: 0%;
   }
-  70% {
-    opacity: 50%;
-  }
   100% {
     opacity: 100%;
+  }
+}
+@-webkit-keyframes decal {
+  0% {
+    margin-top: 30px;
+  }
+  100% {
+    margin-top: 10px;
   }
 }
 .liste_menu:hover .liste_menu i {
@@ -500,23 +525,7 @@ button:hover {
   border-bottom-right-radius: 15px;
   color: white;
 }
-.fa-check-circle:hover {
-  position: absolute;
-  overflow: visible;
-  margin: -70px;
-  -webkit-animation: rotate_i 0.5s infinite;
-}
 
-@-webkit-keyframes rotate_i {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 .menu button {
   display: flex;
   align-items: center;
