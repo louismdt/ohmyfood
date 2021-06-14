@@ -154,7 +154,7 @@ body{
         background-color: #EAEAEA;
         border-top: 2px #DADADA solid;
         i{
-            width: 10%;
+            width: 20px;
             color: #4D4D4D;
         }
         p{
@@ -260,6 +260,10 @@ body{
             padding-top: 20px;
             margin: 0;
         }
+        @media only screen and (min-width: 1024px) {
+            /* Appareils avec une résolution au-dessus de 1024px */
+            height: 700px;
+           }
     }
 
     .liste_restaurant{
@@ -270,6 +274,12 @@ body{
         align-items: center;
         justify-content: space-around;
         margin: 0;
+        @media only screen and (min-width: 1024px) {
+            /* Appareils avec une résolution au-dessus de 1024px */
+            height: 90%;
+            flex-direction: row;
+            flex-wrap: wrap;
+           }
     }
 
     .carte_restaurant{
@@ -283,6 +293,10 @@ body{
             width: 100%;
             position: relative;
         }
+        @media only screen and (min-width: 1024px) {
+            /* Appareils avec une résolution au-dessus de 1024px */
+            width: 35%;
+           }
     } 
 
     .image_carte{

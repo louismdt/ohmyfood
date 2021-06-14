@@ -139,7 +139,7 @@ aside {
   border-top: 2px #DADADA solid;
 }
 .recherche i {
-  width: 10%;
+  width: 20px;
   color: #4D4D4D;
 }
 .recherche p {
@@ -241,6 +241,12 @@ button:hover {
   padding-top: 20px;
   margin: 0;
 }
+@media only screen and (min-width: 1024px) {
+  .restaurants {
+    /* Appareils avec une résolution au-dessus de 1024px */
+    height: 700px;
+  }
+}
 
 .liste_restaurant {
   width: 100%;
@@ -250,6 +256,14 @@ button:hover {
   align-items: center;
   justify-content: space-around;
   margin: 0;
+}
+@media only screen and (min-width: 1024px) {
+  .liste_restaurant {
+    /* Appareils avec une résolution au-dessus de 1024px */
+    height: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .carte_restaurant {
@@ -263,6 +277,12 @@ button:hover {
 .carte_restaurant img {
   width: 100%;
   position: relative;
+}
+@media only screen and (min-width: 1024px) {
+  .carte_restaurant {
+    /* Appareils avec une résolution au-dessus de 1024px */
+    width: 35%;
+  }
 }
 
 .image_carte {
