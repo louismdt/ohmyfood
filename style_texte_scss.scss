@@ -56,7 +56,7 @@ body{
 .loader{
     width: 100vw;
     height: 100vh;
-    display: flex; /*pour le cacher mettre en display none*/
+    display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -128,11 +128,7 @@ body{
     }
 }
 
-
 /*Accueil*/    
-
-
-
     /*champ de recherche*/
 
     aside{
@@ -161,8 +157,6 @@ body{
             font-size: 0.9em;
         }
     }
-
-
 
     .informations{
         width: 100%;
@@ -232,7 +226,7 @@ body{
         box-shadow: 0px 5px 10px grey;
         position: relative;
         &:hover{
-            background-color: #ddc2ff; /*revoir code couleur*/
+            background-color: #ddc2ff;
         }
     }
 
@@ -486,35 +480,33 @@ body{
             justify-content: center;
             align-items: center;
             margin-right: -70px;
-            transition: margin 0.6s linear; 
+            transition: margin 0.6s linear;
         }
         
         &:hover i{
                 margin-right: 0;
             }
     }
-/*vérifier le problème keyframes ou changer et mettre en, css ?*/
-@-webkit-keyframes chargement {
-    0%{
-        opacity: 0%;
-        
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-@-webkit-keyframes decal {
-    0%{
-        margin-top: 30px;
-    }
-    100%{
-        margin-top: 10px;
-    }
-}
 
-    .liste_menu:hover .liste_menu i{  /*penser a vérifier ce qui cloche */
+    @-webkit-keyframes chargement {
+        0%{opacity: 0%;}
+        100%{opacity: 100%;}
+    }
+
+    @-webkit-keyframes decal {
+        0%{margin-top: 30px;}
+        100%{margin-top: 10px;}
+    }
+
+    .liste_menu:hover .liste_menu i{
         overflow: visible;
         margin: 70px;
+        -webkit-animation: rotate 1s linear infinite;
+    }
+
+    @-webkit-keyframes rotate{
+        0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}                //essayer de déplacer la keyframes pour le check
+        100%{-webkit-transform: rotate(360deg); transform: rotate(360deg);}
     }
 
     .liste_menu_enfant{
@@ -594,7 +586,7 @@ body{
     .titre_footer h1{
         height: 10%;
         color: $color-primary;
-        margin: 15px; /*ajuster dimensions ,,,,,, ctrl /*/
+        margin: 15px;
     }
 
     .informations_footer{

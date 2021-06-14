@@ -37,7 +37,6 @@ body a {
   width: 100vw;
   height: 100vh;
   display: flex;
-  /*pour le cacher mettre en display none*/
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -213,7 +212,6 @@ button:hover {
 }
 .texte_onglet:hover {
   background-color: #ddc2ff;
-  /*revoir code couleur*/
 }
 
 .numero_onglet {
@@ -473,7 +471,6 @@ button:hover {
   margin-right: 0;
 }
 
-/*vérifier le problème keyframes ou changer et mettre en, css ?*/
 @-webkit-keyframes chargement {
   0% {
     opacity: 0%;
@@ -491,11 +488,21 @@ button:hover {
   }
 }
 .liste_menu:hover .liste_menu i {
-  /*penser a vérifier ce qui cloche */
   overflow: visible;
   margin: 70px;
+  -webkit-animation: rotate 1s linear infinite;
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 .liste_menu_enfant {
   width: 100%;
   display: flex;
@@ -573,7 +580,6 @@ footer p {
   height: 10%;
   color: white;
   margin: 15px;
-  /*ajuster dimensions ,,,,,, ctrl /*/
 }
 
 .informations_footer {
