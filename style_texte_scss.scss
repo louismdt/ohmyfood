@@ -484,7 +484,9 @@ body{
         }
         
         &:hover i{
-                margin-right: 0;
+            margin-right: 0;
+            transform: rotate(-1turn);
+            transition: transform 1000ms ease-in-out;
             }
     }
 
@@ -501,13 +503,9 @@ body{
     .liste_menu:hover .liste_menu i{
         overflow: visible;
         margin: 70px;
-        -webkit-animation: rotate 1s linear infinite;
+
     }
 
-    @-webkit-keyframes rotate{
-        0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}                //essayer de déplacer la keyframes pour le check
-        100%{-webkit-transform: rotate(360deg); transform: rotate(360deg);}
-    }
 
     .liste_menu_enfant{
         width: 100%;
@@ -547,17 +545,14 @@ body{
     }
 
     .fa-check-circle{
-        width: 15%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         overflow: hidden;
         background-color: #B1F8D6;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         color: $color-primary;
-        
+        &:hover{
+            
+        }
     }
 
     .menu button{
