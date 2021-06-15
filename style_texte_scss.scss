@@ -482,12 +482,14 @@ body{
             margin-right: -70px;
             transition: margin 0.6s linear;
         }
-        
         &:hover i{
             margin-right: 0;
             transform: rotate(-1turn);
-            transition: transform 1000ms ease-in-out;
+            transition: transform 1200ms ease-in-out;
             }
+        .check{    
+            background-color: #B1F8D6;
+        }
     }
 
     @-webkit-keyframes chargement {
@@ -503,7 +505,6 @@ body{
     .liste_menu:hover .liste_menu i{
         overflow: visible;
         margin: 70px;
-
     }
 
 
@@ -545,14 +546,13 @@ body{
     }
 
     .fa-check-circle{
+        width: 100%;
+        height: 100%;
         overflow: hidden;
-        background-color: #B1F8D6;
+        
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         color: $color-primary;
-        &:hover{
-            
-        }
     }
 
     .menu button{
