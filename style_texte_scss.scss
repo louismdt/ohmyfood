@@ -484,12 +484,16 @@ body{
         }
         &:hover i{
             margin-right: 0;
-            transform: rotate(-1turn);
-            transition: transform 1200ms ease-in-out;
+            -webkit-animation: roulement 1s linear ;
             }
         .check{    
             background-color: #B1F8D6;
         }
+    }
+
+    @-webkit-keyframes roulement{
+        0%{-webkit-transform: rotate(0deg); transform: rotate(0deg);}
+        100%{-webkit-transform: rotate(360deg); transform: rotate(360deg);}
     }
 
     @-webkit-keyframes chargement {
